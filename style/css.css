@@ -1,7 +1,7 @@
 /* www.github.com/PandaJJ5286; hjzhang89@126.com*/
 
 /* 样式重置表 */
-body,div,ul,li,a,img,p,h1{padding:0;margin:0;font-family: Arial;}
+body,div,ul,li,a,img,p,h1,h2,form,input{padding:0;margin:0;font-family: Arial;}
 li{list-style:none;}
 img{border:none;}
 a{text-decoration:none;}
@@ -31,3 +31,30 @@ body{background:#fff url(../images/body_bg.png) repeat-x;}
 .shopping a:hover{color:#fbe236;}
 
 #header h1{width:240px;position: absolute;top:0;left:50%;margin-left:-120px;}
+
+#header .search{right:0;top:33px;}
+.search{width:292px;height:31px;background: url(../images/search_bg.png);position: absolute;}
+.search .txt{width:230px;height:31px;background: none;border:none;outline: none;position: absolute;left: 20px;top:0;font-size: 13px;line-height: 31px;color:#666;}
+.search .btn{width:42px;height:31px;background: none;border:none;position: absolute;right:0;top:0;}
+
+#nav{width:960px;height:34px;margin:0 auto;padding-top:8px;}
+#nav li{float: left;height:28px;margin-right: 2px;}
+#nav a{float: left;height:28px; }
+#nav strong{float: left;height:28px;font-weight: normal;}
+#nav span{float: left;height:28px;font-size: 15px;color:#fff;line-height: 28px;text-align: center;padding:0 16px;}
+#nav a:hover,#nav .active a{background: url(../images/nav_bg.png) repeat-x 0 -56px;}
+#nav a:hover strong,#nav .active strong{background:url(../images/nav_bg.png) no-repeat;}
+#nav a:hover span,#nav .active span{background: url(../images/nav_bg.png) no-repeat right -28px;}
+
+#content{width:1000px;background: url(../images/content_bg.png) repeat-y -1000px 0;margin: 25px auto 0;}
+#content_top{width:1000px;background:url(../images/content_bg.png) no-repeat; }
+#content_bottom{width:1000px;background: url(../images/content_bg.png) no-repeat -2000px bottom;}
+
+#ad{width:940px;height:300px;position: relative;top:10px;margin: 0 auto;}
+#ad ul,#ad li,#ad a,#ad h2,#ad p,#ad .bg{position: absolute;}
+#ad ul{width:940px;left:;top:;z-index: 1}
+#ad li{left:;top:;z-index: 3}
+#ad a{}
+#ad h2{left:;bottom:0;z-index: 3}
+#ad p{left:268px;bottom:0;z-index: 3}
+#ad .bg{width:940px;height:52px;left:0;bottom:0;z-index: 1;background-color: #000;opacity:0.8;}
