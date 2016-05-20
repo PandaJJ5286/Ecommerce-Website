@@ -65,7 +65,12 @@ body{background:#fff url(../images/body_bg.png) repeat-x;}
 #main #wrap{width:706px;float:right;}
 
 .module_menu{}
-.module_menu h2{background:url(../images/module_menu_bg.png) repeat-x 0 -29px;}
+.module_menu h2{background:url(../images/module_menu_bg.png) repeat-x 0 -29px;border-bottom:1px solid #fff;}
 .module_menu h2 strong{display:block;height:29px;font-weight: normal;background:url(../images/module_menu_bg.png) no-repeat ;}
 .module_menu h2 span{display:block;height:29px;line-height:29px;color:#fff;font-size:15px;font-weight: bold;text-align:center;background:url(../images/module_menu_bg.png) no-repeat right -58px;}
 
+.list{background: url(../images/module_menu_list_bg.png) repeat-y -210px 0;}
+.list ul{background: url(../images/module_menu_list_bg.png) no-repeat 0 bottom; padding: 18px 8px 15px;}
+.list li{height:29px ;line-height:29px; padding-left:33px; border-bottom:1px solid #fff;}
+.list a{font-size: 12px;font-weight:bold;text-decoration:none;color:#434343;}
+.list a:hover{color:#b20e00;}
