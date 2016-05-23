@@ -78,3 +78,14 @@ body{background:#fff url(../images/body_bg.png) repeat-x;}
 .module_join{width:210px;background: url(../images/module_menu_list_bg.png) repeat-y -630px 0;}
 .module_join_t{background: url(../images/module_menu_list_bg.png) no-repeat -420px 0;}
 .module_join_p{background: url(../images/module_menu_list_bg.png) no-repeat -840px bottom;}
+
+.join_form{width:180px;margin:0 auto 12px;}
+.join_form p{font-size:15px;color:#666;line-height: 18px;padding:12px 0;}
+.join_form .txt{height:26px;border:1px solid #fff;border-top-color:#9c9c9c;border-left-color:#c0c0c0;}
+.join_form .btn{height:26px;width:88px;margin-top: 6px;margin-left:46px;border:none;background: url(../images/shopping_bg.png) no-repeat 0 -135px;color:#fff;font-size:15px;font-weight:bold;line-height: 26px;text-align:center;}
+
+.join_list{height:190px;width:192px;margin:0 auto;background: url(../images/shopping_bg.png) no-repeat 10px -160px;}
+.join_list li{font-size:13px;color:#434343;border-top:1px solid #fff;padding-left: 62px;}
+.join_list .space1{height:45px;line-height:45px;}
+.join_list .space2{height:43px;padding-top:5px;line-height: 18px;}
+.join_list .space3{height:45px;padding-top:5px;line-height: 18px;}
