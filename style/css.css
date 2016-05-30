@@ -130,3 +130,20 @@ body{background:#fff url(../images/body_bg.png) repeat-x;}
 .list_wrap li{float:left;margin: 0 30px;}
 .list_wrap li a{display:block;width:145px;height:99px;border:1px solid #c0c0c0;}
 .list_wrap p{width:145px;padding-top:11px;font-size:12px;line-height: 12px;color:#660000;text-align: center;}
+
+#footer{background: url(../images/footer_bg.png) repeat-x;}
+#footer_search,#footer_info{width:960px;margin: 0 auto;}
+
+#footer_search{height:61px; line-height: 61px;position: relative;}
+#footer_search .safe,#footer_search .order{float:left;width:322px;padding-left:62px;font-size:14px;font-weight: bold;color:#cbcbcb;position: absolute;}
+#footer_search .safe{background: url(../images/footer_icon.png) no-repeat;height:55px;line-height: 55px;left:10px;top:5px;}
+#footer_search .order{background: url(../images/footer_icon.png) no-repeat 0 -58px;height:36px;line-height:36px;left:354px;top:13px;}
+#footer .search{position:absolute;right:0;top:15px;}
+
+#footer_info{height:242px;}
+.footer_ul{float: left;width:168px;padding-left: 24px;padding-top: 13px;}
+.footer_ul li{font-size: 13px;color: #cfcfcf;}
+.footer_ul h3{font-size: 15px;font-weight: bold;color: #fff;height:57px;line-height: 57px;}
+.footer_ul a{font-size: 13px;color: #cfcfcf;height:20px;line-height: 20px;}
+.footer_ul .mail{color:#ffcc00;}
+.footer_ul .worktime{padding-top: 20px;}
