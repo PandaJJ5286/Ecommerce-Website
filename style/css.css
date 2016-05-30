@@ -106,7 +106,7 @@ body{background:#fff url(../images/body_bg.png) repeat-x;}
 .sort .color-style{color:#b20e00;}
 
 .pic_list{width:706px;overflow: hidden;}
-.pic_list h2,.scroll_list h2{height:30px;line-height:30px;padding-top:20px;padding-bottom:9px;font-size:18px;color:#666;}
+.pic_list h2{height:30px;line-height:30px;padding-top:20px;padding-bottom:9px;font-size:18px;color:#666;}
 .pic_list ul{width:736px;}
 .pic_list li{float:left;width:182px;height:200px;}
 .pic_list a{display:block;width:154px;height:114px;border:1px solid #c6c6c6;margin-bottom: 8px;}
@@ -120,7 +120,8 @@ body{background:#fff url(../images/body_bg.png) repeat-x;}
 .page a:hover,.page .active{background-color: #b20e00;color:#fff;text-decoration: none;}
 .page span{font-family: "宋体";}
 
-.scroll_wrap{position:relative;width:704px;height:206px;background: url(../images/scroll_list.png) repeat-x 0 -496px;}
+.scroll_wrap{position:relative;width:704px;height:206px;margin-bottom:22px;background: url(../images/scroll_list.png) repeat-x 0 -496px;}
+.scroll_list h2{height:22px;line-height:22px;padding-top:18px;font-size:18px;color:#666;}
 .scroll_wrap_l{height:206px;background: url(../images/scroll_list.png) no-repeat 0 -84px;}
 .scroll_wrap_r{height:206px;background: url(../images/scroll_list.png) no-repeat right -290px;}
 .prev,.next{display: block;width:35px;height:42px;}
