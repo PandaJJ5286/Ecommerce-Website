@@ -2,6 +2,7 @@
 
 window.onload = function(){
 	mv.app.toTips();
+	mv.app.toBanner();
 };
 
 var mv = {}; //命名空间
@@ -9,7 +10,7 @@ var mv = {}; //命名空间
 mv.tools = {};
 
 mv.tools.getElementsByClass = function(oParent,sClass){
-	var aEle = oParent.getElementsByTagname("*");
+	var aEle = oParent.getElementsByTagName("*");
 	var arr =[];
 
 	for(var i=0;i<aEle.length;i++){
@@ -20,6 +21,14 @@ mv.tools.getElementsByClass = function(oParent,sClass){
 
 	return arr;
 
+}
+
+mv.tools.getStyle = function(obj,attr){
+	if(obj.currentStyle){
+		return obj.currentStyle[attr];
+	}else{
+		return getComputedStyle(obj,false)[attr];
+	}
 }
 
 mv.ui = {};
@@ -38,6 +47,50 @@ mv.ui.textChange = function(obj,str){
 	};
 };
 
+mv.ui.fadeIn = function(obj){
+	var iCur = mv.tools.getStyle(obj,'opacity');
+	if(iCur == 100){ 
+		return false; 
+	}
+
+	var value = 0;
+	var iSpeed = 5;
+	
+	clearInterval(obj.timer);
+
+	obj.timer = setInterval(function(){
+		if(value == 100){
+			clearInterval(obj.timer);
+		}else{
+			value += iSpeed;
+			obj.style.opacity = value/100;
+			obj.style.filter = 'alpha(opacity='+value+')';
+		}
+	},30);
+}
+
+mv.ui.fadeOut = function(obj){
+	var iCur = mv.tools.getStyle(obj,'opacity');
+	if(iCur == 0){ 
+		return false; 
+	}
+
+	var value = 100;
+	var iSpeed = 5;
+	
+	clearInterval(obj.timer);
+
+	obj.timer = setInterval(function(){
+		if(value == 0){
+			clearInterval(obj.timer);
+		}else{
+			value -= iSpeed;
+			obj.style.opacity = value/100;
+			obj.style.filter = 'alpha(opacity='+value+')';
+		}
+	},30);
+}
+
 mv.app = {};
 
 mv.app.toTips = function(){
@@ -50,7 +103,7 @@ mv.app.toTips = function(){
 
 mv.app.toBanner = function(){
 	var oAd = document.getElementById("ad");
-	var ali = oAd.getElementsByTagName("li");
+	var aLi = oAd.getElementsByTagName("li");
 
 	var oPrevBg = mv.tools.getElementsByClass(oAd,"prev_bg")[0];
 	var oNextBg = mv.tools.getElementsByClass(oAd,"next_bg")[0];
@@ -71,9 +124,9 @@ mv.app.toBanner = function(){
 		}
 
 		for(var i=0;i<aLi.length;i++){
-			mv.tools.fadeOut(aLi[i]);
+			mv.ui.fadeOut(aLi[i]);
 		}
 
-		mv.tools.fadeIn(aLi[iNum]);
+		mv.ui.fadeIn(aLi[iNum]);
 	}
 }
