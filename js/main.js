@@ -129,4 +129,47 @@ mv.app.toBanner = function(){
 
 		mv.ui.fadeIn(aLi[iNum]);
 	}
+
+	function autoPrev(){
+
+		if(iNum == 0){
+			iNum=aLi.length-1;
+		}else{
+			iNum--;
+		}
+
+		for(var i=0;i<aLi.length;i++){
+			mv.ui.fadeOut(aLi[i]);
+		}
+
+		mv.ui.fadeIn(aLi[iNum]);
+	}
+
+	oPrevBg.onmouseover = oPrev.onmouseover = function(){
+		oPrev.style.display = 'block';
+		clearInterval(timer);
+	}
+
+	oPrevBg.onmouseout = oPrev.onmouseoout = function(){
+		oPrev.style.display = 'none';
+		timer = setInterval(auto,3000);
+	}
+
+	oNextBg.onmouseover = oNext.onmouseover = function(){
+		oNext.style.display = 'block';
+		clearInterval(timer);
+	}
+
+	oNextBg.onmouseout = oNextBg.onmouseout = function(){
+		oNext.style.display = 'none';
+		timer = setInterval(auto,3000);
+	}
+
+	oPrev.onclick = function(){
+		autoPrev();
+	}
+
+	oNext.onclick = function(){
+		auto();
+	}
 }
