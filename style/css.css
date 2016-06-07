@@ -55,11 +55,17 @@ body{background:#fff url(../images/body_bg.png) repeat-x;}
 
 #ad{width:940px;height:300px;position: relative;margin: 0 auto;padding-top:10px;}
 #ad ul,#ad li,#ad a,#ad h2,#ad p,#ad .bg{position: absolute;}
-#ad ul{width:940px;left:;top:;z-index: 1}
-#ad li{left:;top:;z-index: 3}
+#ad ul{width:940px;left:0;top:10px;z-index: 1}
+#ad li{left:0;top:0;z-index: 3}
 #ad h2{left:34px;bottom:15px;z-index: 3;font-size: 25px;font-weight: bold;color:#ffc600;line-height: 18px;}
 #ad p{left:268px;bottom:8px;z-index: 3;font-size: 13px;color:#fcc;line-height: 16px;}
 #ad .bg{width:940px;height:52px;left:0;bottom:0;z-index: 1;background-color: #000;opacity:0.8;}
+#ad .prev,#ad .next{display:none;height:150px;width:75px;position: absolute;top:50%;margin-top:-75px;z-index:7;}
+#ad .prev{background: url(../images/banner/prev.png);left:0;}
+#ad .next{background: url(../images/banner/next.png);right:0;}
+#ad .prev_bg,#ad .next_bg{position:absolute;top:0;width:470px;height:300px;z-index:5;filter:alpha(opacity:0); opacity:0;}
+#ad .prev_bg{left:0;}
+#ad .next_bg{right:0;}
 
 #main{width:940px;margin: 30px auto 0;}
 #main #side{width:210px;float: left;}
